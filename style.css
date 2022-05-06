@@ -40,6 +40,7 @@ background: linear-gradient(277deg, rgba(2,0,36,1) 0%, rgba(53,4,70,1) 39%, rgba
 .profile {
     width: 100%;
     border-bottom: 2px solid #1B2631;
+    display: inline-grid;
 }
 
 .profile .profile-image {
@@ -211,7 +212,7 @@ background: linear-gradient(277deg, rgba(2,0,36,1) 0%, rgba(53,4,70,1) 39%, rgba
     letter-spacing: 1px;
     line-height: 1.5rem;
     border-left: 3px solid #a5a3a3;
-    padding-left: 5px;
+    padding-left: 15px;
 }
 
 /* Media queries */
@@ -224,19 +225,88 @@ background: linear-gradient(277deg, rgba(2,0,36,1) 0%, rgba(53,4,70,1) 39%, rgba
 }
 
 @media screen and (max-width:780px) {
-    .left-section {
-        grid-column: span 3;
+        .left-section {
+            grid-column: span 3;
+        }
+        
+        .right-section {
+            grid-column: span 4;
+        }
+        .profile .profile-image {
+            width: 50%;
+            border-radius: 50%;
+            border: 8px solid rgba(121,9,115,1);
+            margin:auto;
+        }
+        .name {
+            font-size: 25px;
+        }
+
+        .profession {
+            font-size: 20px;
+        }
+
+        .left-title {
+            font-size: 20px;
+        }
+
+        .right-title {
+            font-size: 20px;
+        }
+
+        .contact-info ul li,
+        .references ul li {
+            font-size: 14px;
+        }
+
+        .contact-info ul li i,
+        .references ul li i {
+            /* padding-right: 1rem; */
+            font-size: 14px;
+        }
+
+        .skills ul li p {
+            font-size: 14px;
+        }
+
+        .about-me-contents {
+            font-size: 14px;
+            line-height: 1.5rem;
+        }
+
+        .exp-company-name,
+        .education-school-name,
+        .awards-company-name {
+            font-size: 14px;
+        }
+
+        .exp-time-period,
+        .educationp-time-period,
+        .awards-time-period {
+            font-size: 14px;
+        }
+
+        .exp-position,
+        .education-subject,
+        .awards-name {
+            font-size: 14px;
+        }
+        .exp-desc,
+        .education-desc,
+        .awards-desc {
+            font-size: 14px;
+        }
     }
-    
-    .right-section {
-        grid-column: span 4;
-    }
-    
-}
 
 @media screen and (max-width:1200px) {
     .resume-contents {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .profile .profile-image {
+        width: 50%;
+        border-radius: 50%;
+        border: 8px solid rgba(121,9,115,1);
+        margin:auto;
     }
 }
 
@@ -247,56 +317,61 @@ background: linear-gradient(277deg, rgba(2,0,36,1) 0%, rgba(53,4,70,1) 39%, rgba
     }
 
     .name {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .profession {
-        font-size: 18px;
+        font-size: 12px;
     }
 
     .left-title {
-        font-size: 18px;
+        font-size: 12px;
     }
 
     .right-title {
-        font-size: 18px;
+        font-size: 12px;
     }
 
     .contact-info ul li,
     .references ul li {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .contact-info ul li i,
     .references ul li i {
         /* padding-right: 1rem; */
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .skills ul li p {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .about-me-contents {
-        font-size: 16px;
+        font-size: 12px;
         line-height: 1.5rem;
     }
 
     .exp-company-name,
     .education-school-name,
     .awards-company-name {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .exp-time-period,
     .educationp-time-period,
     .awards-time-period {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .exp-position,
     .education-subject,
     .awards-name {
-        font-size: 18px;
+        font-size: 12px;
+    }
+    .exp-desc,
+    .education-desc,
+    .awards-desc {
+        font-size: 12px;
     }
 }
